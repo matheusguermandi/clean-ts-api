@@ -2,10 +2,5 @@
     "extends": "standard-with-typescript",
     "parserOptions": {
         "project": "./tsconfig.json"
-    },
-    "rules": {
-        "@typescript-eslint/quotes": "off",
-        "@eslint-disable semi": "off",
-        "@eslint-disable comma-dangle": "off",
     }
 }

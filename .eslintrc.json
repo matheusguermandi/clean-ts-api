@@ -4,6 +4,11 @@
         "project": "./tsconfig.json"
     },
     "rules": {
-        "@typescript-eslint/strict-boolean-expressions": "off"
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/member-delimiter-style": "off",
+        "comma-dangle": "off",
+        "@typescript-eslint/quotes": "off",
+        "space-before-function-paren": "off",
+        "semi": "off"
     }
 }

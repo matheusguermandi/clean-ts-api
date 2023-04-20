@@ -1,8 +1,3 @@
-/* eslint-disable @typescript-eslint/member-delimiter-style */
-/* eslint-disable comma-dangle */
-/* eslint-disable @typescript-eslint/quotes */
-/* eslint-disable space-before-function-paren */
-/* eslint-disable semi */
 import { SignUpController } from "./signup";
 import { MissingParamError } from "../errors/missing-param-error";
 import { InvalidParamError } from "../errors/invalid-param-error";

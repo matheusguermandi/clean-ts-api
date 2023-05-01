@@ -23,6 +23,10 @@ export class DbAddAccount implements AddAccount {
     await this.addAccountRepository.add(
       Object.assign({}, accountData, { password: hashedPassword })
     );
-    return new Promise((resolve) => resolve(null));
+
+    const account = await this.addAccountRepository.add(
+      Object.assign({}, accountData, { password: hashedPassword })
+    );
+    return account;
   }
 }

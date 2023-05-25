@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/brace-style */
+/* eslint-disable @typescript-eslint/indent */
 import { AccountModel } from "../../../domain/models/account";
 import { LoadAccountByEmailRepository } from "../../protocols/db/load-account-by-email-repository";
 import { DbAuthentication } from "./db-authentication";
@@ -19,7 +21,9 @@ const makeFakeAuthentication = (): AuthenticationModel => ({
 });
 
 const makeLoadAccountByEmailRepository = (): LoadAccountByEmailRepository => {
-  class LoadAccountByEmailRepositoryStub implements LoadAccountByEmailRepository {
+  class LoadAccountByEmailRepositoryStub
+    implements LoadAccountByEmailRepository
+  {
     async load(email: string): Promise<AccountModel> {
       return new Promise((resolve) => resolve(makeFakeAccount()));
     }
@@ -166,5 +170,16 @@ describe("DbAuthentication UseCase", () => {
     const updateSpy = jest.spyOn(updateAccessTokenRepositoryStub, "update");
     await sut.auth(makeFakeAuthentication());
     expect(updateSpy).toHaveBeenCalledWith("any_id", "any_token");
+  });
+
+  test("Should throw if UpdateAccessTokenRepository throws", async () => {
+    const { sut, updateAccessTokenRepositoryStub } = makeSut();
+    jest
+      .spyOn(updateAccessTokenRepositoryStub, "update")
+      .mockReturnValueOnce(
+        new Promise((resolve, reject) => reject(new Error()))
+      );
+    const promise = sut.auth(makeFakeAuthentication());
+    await expect(promise).rejects.toThrow();
   });
 });

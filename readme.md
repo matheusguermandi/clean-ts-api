@@ -4,11 +4,12 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 
 ## APIs previstas para esse treinamento:
 
-1. [Cadastro](./requirements/signup.md)
-1. [Login](./requirements/login.md)
-1. [Criar enquete](./requirements/add-survey.md)
-1. [Responder enquete](./requirements/answer-survey.md)
-1. [Resultado da enquete](./requirements/survey-result.md)
+- [Cadastro](./requirements/signup.md)
+- [Login](./requirements/login.md)
+- [Criar enquete](./requirements/add-survey.md)
+- [Listar enquetes](./requirements/surveys.md)
+- [Responder enquete](./requirements/answer-survey.md)
+- [Resultado da enquete](./requirements/survey-result.md)
 
 ## Princípios aplicados:
 
@@ -19,7 +20,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Dependency Inversion Principle (DIP)
 - Don't Repeat Yourself (DRY)
 - Composition Over Inheritance
-- Small commits
+- Small Commits
 
 ## Design Patterns aplicados:
 
@@ -38,9 +39,13 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - DDD
 - Conventional Commits
 - GitFlow
+- Modular Design
+- Dependency Diagrams
+- Use Cases
 
 ## Bibliotecas e ferramentas utilizadas:
 
+- NPM
 - Typescript
 - Git
 - Docker
@@ -56,6 +61,9 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Eslint
 - Standard Javascript Style
 - Sucrase
+- Nodemon
+- Rimraf
+- In-Memory MongoDb Server
 
 ## Features abordadas:
 

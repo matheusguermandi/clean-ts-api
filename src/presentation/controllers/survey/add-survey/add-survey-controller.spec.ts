@@ -7,8 +7,8 @@ import {
 import { AddSurveyController } from "./add-survey-controller";
 import {
   badRequest,
-  noContent,
   serverError,
+  noContent,
 } from "../../../helpers/http/http-helper";
 
 const makeFakeRequest = (): HttpRequest => ({

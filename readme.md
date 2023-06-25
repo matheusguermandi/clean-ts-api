@@ -28,6 +28,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Adapter
 - Composite
 - Decorator
+- Proxy
 - Dependency Injection
 - Abstract Server
 - Composition Root

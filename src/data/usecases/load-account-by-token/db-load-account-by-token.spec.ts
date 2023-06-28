@@ -1,4 +1,4 @@
-import { Decrypter } from '../../protocols/cryptography/decrypter'
+import { Decrypter } from '../../protocols/criptography/decrypter'
 import { DbLoadAccountByToken } from './db-load-account-by-token'
 import { AccountModel } from '../../../domain/models/account'
 import { LoadAccountByTokenRepository } from '../../protocols/db/account/load-account-by-token-repository'
@@ -12,7 +12,7 @@ const makeFakeAccount = (): AccountModel => ({
 
 const makeDecrypter = (): Decrypter => {
   class DecrypterStub implements Decrypter {
-    async decrypt(token: string): Promise<string> {
+    async decrypt (token: string): Promise<string> {
       return new Promise(resolve => resolve('any_value'))
     }
   }
@@ -21,7 +21,7 @@ const makeDecrypter = (): Decrypter => {
 
 const makeLoadAccountByTokenRepository = (): LoadAccountByTokenRepository => {
   class LoadAccountByTokenRepositoryStub implements LoadAccountByTokenRepository {
-    async loadByToken(token: string, role?: string): Promise<AccountModel> {
+    async loadByToken (token: string, role?: string): Promise<AccountModel> {
       return new Promise(resolve => resolve(makeFakeAccount()))
     }
   }
@@ -73,7 +73,6 @@ describe('DbLoadAccountByToken Usecase', () => {
     const account = await sut.load('any_token', 'any_role')
     expect(account).toBeNull()
   })
-
 
   test('Should return an account on success', async () => {
     const { sut } = makeSut()

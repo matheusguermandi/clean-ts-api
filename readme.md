@@ -1,5 +1,6 @@
 [![Build Status]()]()
 [![Coverage Status]()]()
+[![Known Vulnerabilities]()]()
 
 # **Clean Node API**
 

@@ -1,3 +1,6 @@
+[![Build Status]()]()
+[![Coverage Status]()]()
+
 # **Clean Node API**
 
 O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID e, sempre que possível, aplicando Design Patterns para resolver alguns problemas comuns.
@@ -43,6 +46,9 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Modular Design
 - Dependency Diagrams
 - Use Cases
+- Continuous Integration
+- Continuous Delivery
+- Continuous Deployment
 
 ## Bibliotecas e ferramentas utilizadas:
 
@@ -52,6 +58,8 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Docker
 - Jest
 - MongoDb
+- Travis CI
+- Coveralls
 - Bcrypt
 - JsonWebToken
 - Validator

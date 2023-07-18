@@ -1,14 +1,15 @@
 {
-    "extends": "standard-with-typescript",
-    "parserOptions": {
-        "project": "./tsconfig.eslint.json"
-    },
-    "rules": {
-        "@typescript-eslint/strict-boolean-expressions": "off",
-        "@typescript-eslint/member-delimiter-style": "off",
-        "comma-dangle": "off",
-        "@typescript-eslint/quotes": "off",
-        "space-before-function-paren": "off",
-        "semi": "off"
-    }
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
+  "rules": {
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "comma-dangle": "off",
+    "@typescript-eslint/quotes": "off",
+    "space-before-function-paren": "off",
+    "semi": "off"
+  }
 }

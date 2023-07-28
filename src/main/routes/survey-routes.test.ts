@@ -10,20 +10,23 @@ let accountCollection: Collection
 
 const makeAccessToken = async (): Promise<string> => {
   const res = await accountCollection.insertOne({
-    name: 'Rodrigo',
-    email: 'rodrigo.manguinho@gmail.com',
+    name: 'test',
+    email: 'test@gmail.com',
     password: '123',
     role: 'admin'
   })
   const id = res.ops[0]._id
   const accessToken = sign({ id }, env.jwtSecret)
-  await accountCollection.updateOne({
-    _id: id
-  }, {
-    $set: {
-      accessToken
+  await accountCollection.updateOne(
+    {
+      _id: id
+    },
+    {
+      $set: {
+        accessToken
+      }
     }
-  })
+  )
   return accessToken
 }
 
@@ -49,12 +52,15 @@ describe('Survey Routes', () => {
         .post('/api/surveys')
         .send({
           question: 'Question',
-          answers: [{
-            answer: 'Answer 1',
-            image: 'http://image-name.com'
-          }, {
-            answer: 'Answer 2'
-          }]
+          answers: [
+            {
+              answer: 'Answer 1',
+              image: 'http://image-name.com'
+            },
+            {
+              answer: 'Answer 2'
+            }
+          ]
         })
         .expect(403)
     })
@@ -66,12 +72,15 @@ describe('Survey Routes', () => {
         .set('x-access-token', accessToken)
         .send({
           question: 'Question',
-          answers: [{
-            answer: 'Answer 1',
-            image: 'http://image-name.com'
-          }, {
-            answer: 'Answer 2'
-          }]
+          answers: [
+            {
+              answer: 'Answer 1',
+              image: 'http://image-name.com'
+            },
+            {
+              answer: 'Answer 2'
+            }
+          ]
         })
         .expect(204)
     })
@@ -79,9 +88,7 @@ describe('Survey Routes', () => {
 
   describe('GET /surveys', () => {
     test('Should return 403 on load surveys without accessToken', async () => {
-      await request(app)
-        .get('/api/surveys')
-        .expect(403)
+      await request(app).get('/api/surveys').expect(403)
     })
 
     test('Should return 204 on load surveys with valid accessToken', async () => {

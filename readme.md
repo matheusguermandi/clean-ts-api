@@ -62,6 +62,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Jest
 - MongoDb
 - Travis CI
+- Swagger
 - Coveralls
 - Bcrypt
 - JsonWebToken
@@ -80,6 +81,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 
 ## Features abordadas:
 
+- Documentação de API com Swagger
 - Atalhos no Git
 - Log de Erro
 - Segurança (Hashing, Encryption e Encoding)

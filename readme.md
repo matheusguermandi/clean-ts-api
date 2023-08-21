@@ -15,7 +15,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - [Responder enquete](./requirements/answer-survey.md)
 - [Resultado da enquete](./requirements/survey-result.md)
 
-## Princípios aplicados:
+> ## Princípios
 
 - Single Responsibility Principle (SRP)
 - Open Closed Principle (OCP)
@@ -28,7 +28,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Composition Over Inheritance
 - Small Commits
 
-## Design Patterns aplicados:
+> ## Design Patterns
 
 - Factory
 - Adapter
@@ -39,7 +39,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Abstract Server
 - Composition Root
 
-## Metodologias/designs utilizados:
+> ## Metodologias e Designs
 
 - TDD
 - Clean Architecture
@@ -53,7 +53,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Continuous Delivery
 - Continuous Deployment
 
-## Bibliotecas e ferramentas utilizadas:
+> ## Bibliotecas e Ferramentas
 
 - NPM
 - Typescript
@@ -78,22 +78,59 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Rimraf
 - In-Memory MongoDb Server
 - MockDate
+- Module-Alias
 
-## Features abordadas:
+> ## Features do Node
 
 - Documentação de API com Swagger
-- Atalhos no Git
 - Log de Erro
 - Segurança (Hashing, Encryption e Encoding)
 - CORS
 - Middlewares
-- Testes de Integração
+- Nível de Acesso nas Rotas (Admin, User e Anônimo)
+- Deploy no Heroku
+
+> ## Features do Git
+
+- Alias
+- Log Personalizado
+- Branch
+- Reset
+- Amend
+- Tag
+- Stash
+- Rebase
+- Merge
+
+> ## Features do Typescript
+
+- POO Avançado
+- Interface
+- TypeAlias
+- Utility Types
+- Modularização de Paths
+- Build
+- Deploy
+- Uso de Breakpoints
+
+> ## Features de Testes
+
 - Testes Unitários
+- Testes de Integração
 - Cobertura de Testes
 - Mocks
 - Stubs
 - Spies
-- Deploy com Typescript
-- Deploy no Heroku
-- Uso de breakpoints no Typescript
-- Uso correto de tags no Git
+
+> ## Features do MongoDb
+
+- Connect e Reconnect
+- Collections
+- InsertOne e InserMany
+- Find, FindOne e FindOneAndUpdate
+- DeleteMany
+- UpdateOne
+- Aggregation (Match, Group, Unwind, Lookup, AddFields, Project)
+- ObjectId
+- Upsert e ReturnOriginal
+- Push, Divide, Multiply, ArrayElemAt, Filter, Cond, Sum

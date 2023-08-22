@@ -38,6 +38,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Dependency Injection
 - Abstract Server
 - Composition Root
+- Builder
 
 > ## Metodologias e Designs
 

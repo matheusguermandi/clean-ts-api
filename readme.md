@@ -131,7 +131,8 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Find, FindOne e FindOneAndUpdate
 - DeleteMany
 - UpdateOne
-- Aggregation (Match, Group, Unwind, Lookup, AddFields, Project)
+- Aggregation (Match, Group, Unwind, Lookup, AddFields, Project, Sort)
 - ObjectId
 - Upsert e ReturnOriginal
-- Push, Divide, Multiply, ArrayElemAt, Filter, Cond, Sum
+- Push, Divide, Multiply, ArrayElemAt, Cond, Sum
+- Filter, Map, Reduce, MergeObjects, ConcatArrays

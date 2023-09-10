@@ -1,12 +1,8 @@
-[![Build Status]()]()
-[![Coverage Status]()]()
-[![Known Vulnerabilities]()]()
-
 # **Clean Node API**
 
 O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID e, sempre que possível, aplicando Design Patterns para resolver alguns problemas comuns.
 
-## APIs previstas para esse treinamento:
+## APIs
 
 - [Cadastro](./requirements/signup.md)
 - [Login](./requirements/login.md)
@@ -67,6 +63,8 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Coveralls
 - Bcrypt
 - JsonWebToken
+- Faker
+- Coveralls
 - Validator
 - Express
 - Supertest
@@ -119,9 +117,11 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Testes Unitários
 - Testes de Integração
 - Cobertura de Testes
+- Test Doubles
 - Mocks
 - Stubs
 - Spies
+- Fakes
 
 > ## Features do MongoDb
 

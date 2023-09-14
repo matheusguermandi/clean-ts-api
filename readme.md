@@ -78,6 +78,8 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - In-Memory MongoDb Server
 - MockDate
 - Module-Alias
+- Copyfiles
+- Npm Check
 
 > ## Features do Node
 
@@ -88,6 +90,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Middlewares
 - Nível de Acesso nas Rotas (Admin, User e Anônimo)
 - Deploy no Heroku
+- Servir Arquivos Estáticos
 
 > ## Features do Git
 

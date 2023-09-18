@@ -18,6 +18,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Liskov Substitution Principle (LSP)
 - Interface Segregation Principle (ISP)
 - Dependency Inversion Principle (DIP)
+- Separation of Concerns (SOC)
 - Don't Repeat Yourself (DRY)
 - You Aren't Gonna Need It (YAGNI)
 - Keep It Simple, Silly (KISS)

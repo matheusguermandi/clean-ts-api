@@ -36,6 +36,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Abstract Server
 - Composition Root
 - Builder
+- Singleton
 
 > ## Metodologias e Designs
 
@@ -109,9 +110,10 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 
 - POO Avançado
 - Interface
-- TypeAlias
+- Namespace
 - Utility Types
 - Modularização de Paths
+- Configurações
 - Build
 - Deploy
 - Uso de Breakpoints

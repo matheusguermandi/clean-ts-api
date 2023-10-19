@@ -2,14 +2,14 @@
 
 O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID e, sempre que possível, aplicando Design Patterns para resolver alguns problemas comuns.
 
-## APIs
+> ## APIs construídas no treinamento
 
-- [Cadastro](./requirements/signup.md)
-- [Login](./requirements/login.md)
-- [Criar enquete](./requirements/add-survey.md)
-- [Listar enquetes](./requirements/surveys.md)
-- [Responder enquete](./requirements/answer-survey.md)
-- [Resultado da enquete](./requirements/survey-result.md)
+1. [Cadastro](./requirements/signup.md)
+2. [Login](./requirements/login.md)
+3. [Criar enquete](./requirements/add-survey.md)
+4. [Listar enquetes](./requirements/load-surveys.md)
+5. [Responder enquete](./requirements/save-survey-result.md)
+6. [Resultado da enquete](./requirements/load-survey-result.md)
 
 > ## Princípios
 
@@ -62,13 +62,15 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - MongoDb
 - Travis CI
 - Swagger
-- Coveralls
 - Bcrypt
 - JsonWebToken
 - Faker
 - Coveralls
 - Validator
 - Express
+- Apollo Server Express
+- Graphql
+- Graphql ISO Date
 - Supertest
 - Husky
 - Lint Staged
@@ -87,6 +89,8 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 > ## Features do Node
 
 - Documentação de API com Swagger
+- API Rest com Express
+- GraphQL com Apollo Server
 - Log de Erro
 - Segurança (Hashing, Encryption e Encoding)
 - CORS
@@ -94,6 +98,16 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Nível de Acesso nas Rotas (Admin, User e Anônimo)
 - Deploy no Heroku
 - Servir Arquivos Estáticos
+
+> ## Features do GraphQL
+
+- Types
+- Queries
+- Mutations
+- Resolvers
+- Directives
+- Scalars
+- Plugins
 
 > ## Features do Git
 
@@ -111,6 +125,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 
 - POO Avançado
 - Interface
+- TypeAlias
 - Namespace
 - Utility Types
 - Modularização de Paths

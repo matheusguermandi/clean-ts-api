@@ -1,17 +1,17 @@
-# **Clean Node API**
+# **Node JS - API**
 
-O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID e, sempre que possível, aplicando Design Patterns para resolver alguns problemas comuns.
+The goal of this repository is to create an API with a well-defined and decoupled architecture, using TDD (test-oriented programming) as a working methodology, Clean Architecture to distribute responsibilities in layers, always following the principles of SOLID and, whenever possible, applying Design Patterns to solve some common problems.
 
-> ## APIs construídas no treinamento
+> ## Use cases
 
-1. [Cadastro](./requirements/signup.md)
+1. [SingUp](./requirements/signup.md)
 2. [Login](./requirements/login.md)
-3. [Criar enquete](./requirements/add-survey.md)
-4. [Listar enquetes](./requirements/load-surveys.md)
-5. [Responder enquete](./requirements/save-survey-result.md)
-6. [Resultado da enquete](./requirements/load-survey-result.md)
+3. [Add survey](./requirements/add-survey.md)
+4. [Load survey](./requirements/load-surveys.md)
+5. [Answer survey](./requirements/save-survey-result.md)
+6. [Load survey result](./requirements/load-survey-result.md)
 
-> ## Princípios
+> ## Principles
 
 - Single Responsibility Principle (SRP)
 - Open Closed Principle (OCP)
@@ -38,11 +38,11 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Builder
 - Singleton
 
-> ## Metodologias e Designs
+> ## Methodologies and Designs
 
-- TDD
 - Clean Architecture
-- DDD
+- DDD (Domain driven design)
+- TDD (Test driven development)
 - Conventional Commits
 - GitFlow
 - Modular Design
@@ -52,7 +52,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Continuous Delivery
 - Continuous Deployment
 
-> ## Bibliotecas e Ferramentas
+> ## Libraries and tools
 
 - NPM
 - Typescript
@@ -86,20 +86,20 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Npm Check
 - Bson ObjectId
 
-> ## Features do Node
+> ## Node features
 
-- Documentação de API com Swagger
-- API Rest com Express
-- GraphQL com Apollo Server
-- Log de Erro
-- Segurança (Hashing, Encryption e Encoding)
+- Swagger documentation
+- API Rest using Express
+- GraphQL using Apollo Server
+- Error logging
+- Security (Hashing, Encryption e Encoding)
 - CORS
 - Middlewares
-- Nível de Acesso nas Rotas (Admin, User e Anônimo)
+- Authorization levels (Admin, User e Anonymous)
 - Deploy no Heroku
-- Servir Arquivos Estáticos
+- Serve Static Files
 
-> ## Features do GraphQL
+> ## GraphQL features
 
 - Types
 - Queries
@@ -109,7 +109,7 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Scalars
 - Plugins
 
-> ## Features do Git
+> ## Git features
 
 - Alias
 - Log Personalizado
@@ -121,35 +121,32 @@ O objetivo desse repositorio é criar uma API com uma arquitetura bem definida e
 - Rebase
 - Merge
 
-> ## Features do Typescript
+> ## Typescript features
 
-- POO Avançado
+- Object Oriented Programming
 - Interface
 - TypeAlias
 - Namespace
 - Utility Types
-- Modularização de Paths
-- Configurações
+- Paths Modularization
 - Build
 - Deploy
-- Uso de Breakpoints
 
-> ## Features de Testes
+> ## Test features
 
-- Testes Unitários
-- Testes de Integração
-- Cobertura de Testes
+- Unit tests
+- Integration tests
 - Test Doubles
 - Mocks
 - Stubs
 - Spies
 - Fakes
 
-> ## Features do MongoDb
+> ## MongoDb features
 
 - Connect e Reconnect
 - Collections
-- InsertOne e InserMany
+- InsertOne e InsertMany
 - Find, FindOne e FindOneAndUpdate
 - DeleteMany
 - UpdateOne
